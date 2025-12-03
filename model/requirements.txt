@@ -1,0 +1,10 @@
+# Minimal requirements tailored to the notebook imports
+# Note: `re` and `math` are in the Python stdlib and are not listed here.
+pandas>=2.1.0
+numpy>=1.26.0
+scikit-learn>=1.3.0
+tensorflow>=2.14.0
+# `keras` will be available with `tensorflow`, but include the package to match notebook imports
+keras>=2.14.0
+nltk>=3.8.1
+h5py>=3.10.0
