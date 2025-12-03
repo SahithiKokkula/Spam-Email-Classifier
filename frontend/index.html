@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Email Classifier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Spam Email Classifier</h1>
+            <p>Enter email text to check if it's spam or not</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <textarea 
+                    id="emailInput" 
+                    placeholder="Paste your email text here..."
+                    rows="10"
+                ></textarea>
+                <button id="predictBtn" onclick="predictEmail()">Check Email</button>
+            </div>
+
+            <div id="resultSection" class="result-section hidden">
+                <div id="resultCard" class="result-card">
+                    <h2 id="resultLabel"></h2>
+                    <p id="resultConfidence"></p>
+                </div>
+            </div>
+
+            <div id="loadingSection" class="loading-section hidden">
+                <div class="spinner"></div>
+                <p>Analyzing email...</p>
+            </div>
+
+            <div id="errorSection" class="error-section hidden">
+                <p id="errorMessage"></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
